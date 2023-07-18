@@ -28,10 +28,10 @@ const NavBar = () => {
                     <Image size='mini' src='/vite.svg' style={{ marginRight: '1.5em' }} />
                     UpSchool-FinalProject
                 </Menu.Item>
-                <br />
+            
                 <Menu.Item as={NavLink} to="/">Home</Menu.Item>
-                <br />
-
+                <Menu.Item as={NavLink} to="/orderPage">Orders</Menu.Item>
+            
                 {!appUser && <Menu.Item as={NavLink} to="/loginPage" position="right">Login Page</Menu.Item>}
                 {appUser && <Menu.Item as={Button} onClick={handleLogout} position="right"><Icon name="sign-out" /> Logout</Menu.Item>}
       

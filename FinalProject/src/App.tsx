@@ -4,12 +4,14 @@ import NavBar from './components/NavBar';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
+import OrderPage from './pages/AddOrderPage';
 import SocialLogin from './pages/SocialLogin';
 import { LocalJwt, LocalUser } from './types/AuthTypes';
 import { getClaimsFromJwt } from './utils/jwtHelper';
 import { useEffect, useState } from 'react';
 import { AppUserContext } from './context/StateContext';
 import ProtectedRoute from './components/ProtectedRoute';
+import AddOrderPage from './pages/AddOrderPage';
 
 export default function App() {
 
@@ -58,6 +60,9 @@ export default function App() {
          
           <Route path='/loginPage' element={<LoginPage />} />
           <Route path='/social-login' element={<SocialLogin />} />
+          <Route path='/orderPage' element={<AddOrderPage />} />
+
+
         </Routes>
       </Container>
       </AppUserContext.Provider>
