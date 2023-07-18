@@ -1,0 +1,12 @@
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Domain\bin\Debug\net7.0\FinalProject.Domain.deps.json
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Domain\bin\Debug\net7.0\FinalProject.Domain.dll
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Domain\bin\Debug\net7.0\FinalProject.Domain.pdb
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Domain\obj\Debug\net7.0\FinalProject.Domain.csproj.AssemblyReference.cache
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Domain\obj\Debug\net7.0\FinalProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Domain\obj\Debug\net7.0\FinalProject.Domain.AssemblyInfoInputs.cache
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Domain\obj\Debug\net7.0\FinalProject.Domain.AssemblyInfo.cs
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Domain\obj\Debug\net7.0\FinalProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Domain\obj\Debug\net7.0\FinalProject.Domain.dll
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Domain\obj\Debug\net7.0\refint\FinalProject.Domain.dll
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Domain\obj\Debug\net7.0\FinalProject.Domain.pdb
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Domain\obj\Debug\net7.0\ref\FinalProject.Domain.dll

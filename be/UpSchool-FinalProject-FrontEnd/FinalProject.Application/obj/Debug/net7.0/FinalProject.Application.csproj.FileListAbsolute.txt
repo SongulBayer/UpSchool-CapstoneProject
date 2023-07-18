@@ -1,0 +1,17 @@
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.csproj.AssemblyReference.cache
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.AssemblyInfoInputs.cache
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.AssemblyInfo.cs
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.csproj.CoreCompileInputs.cache
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\bin\Debug\net7.0\FinalProject.Application.deps.json
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\bin\Debug\net7.0\FinalProject.Application.runtimeconfig.json
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\bin\Debug\net7.0\FinalProject.Application.dll
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\bin\Debug\net7.0\FinalProject.Application.pdb
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\bin\Debug\net7.0\FinalProject.Domain.dll
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\bin\Debug\net7.0\FinalProject.Domain.pdb
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.csproj.CopyComplete
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.dll
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\obj\Debug\net7.0\refint\FinalProject.Application.dll
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.pdb
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.genruntimeconfig.cache
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\FinalProject.Application\obj\Debug\net7.0\ref\FinalProject.Application.dll

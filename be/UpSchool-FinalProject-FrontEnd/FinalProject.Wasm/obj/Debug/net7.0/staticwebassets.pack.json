@@ -1,0 +1,101 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\obj\\Debug\\net7.0\\build-gz\\AK7a900l.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\obj\\Debug\\net7.0\\scopedcss\\bundle\\FinalProject.Wasm.styles.css",
+      "PackagePath": "staticwebassets\\FinalProject.Wasm.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\songül bayer\\OneDrive\\Masaüstü\\UpShcool-Backend-main\\UpSchool-FinalProject-FrontEnd\\FinalProject.Wasm\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FinalProject.Wasm.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.FinalProject.Wasm.props",
+      "PackagePath": "build\\FinalProject.Wasm.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.FinalProject.Wasm.props",
+      "PackagePath": "buildMultiTargeting\\FinalProject.Wasm.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.FinalProject.Wasm.props",
+      "PackagePath": "buildTransitive\\FinalProject.Wasm.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

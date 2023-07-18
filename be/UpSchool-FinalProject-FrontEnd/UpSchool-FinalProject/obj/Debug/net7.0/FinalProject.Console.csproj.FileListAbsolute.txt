@@ -1,0 +1,5 @@
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\UpSchool-FinalProject\obj\Debug\net7.0\FinalProject.Console.csproj.AssemblyReference.cache
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\UpSchool-FinalProject\obj\Debug\net7.0\FinalProject.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\UpSchool-FinalProject\obj\Debug\net7.0\FinalProject.Console.AssemblyInfoInputs.cache
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\UpSchool-FinalProject\obj\Debug\net7.0\FinalProject.Console.AssemblyInfo.cs
+C:\Users\songül bayer\OneDrive\Masaüstü\UpShcool-Backend-main\UpSchool-FinalProject-FrontEnd\UpSchool-FinalProject\obj\Debug\net7.0\FinalProject.Console.csproj.CoreCompileInputs.cache
