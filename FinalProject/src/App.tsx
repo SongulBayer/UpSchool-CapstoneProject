@@ -12,6 +12,11 @@ import { useEffect, useState } from 'react';
 import { AppUserContext } from './context/StateContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import AddOrderPage from './pages/AddOrderPage';
+import ListProductsPage from './pages/ListProductsPage';
+import ListOrdersPage from './pages/ListOrdersPage';
+import { ToastContainer } from 'react-toastify';
+import ListUserPage from './pages/ListUserPage';
+// import ExportToExcelProducts from './pages/ExportToExcelProducts';
 
 export default function App() {
 
@@ -49,9 +54,10 @@ export default function App() {
   return (
     <>
     <AppUserContext.Provider value={{appUser, setAppUser}}>
-      <NavBar />
+      
       <Container className="App">
-
+      <ToastContainer/>
+      <NavBar />
         <Routes>
           {/* Anasayfada HomePage görüntülenmesini sağladım */}
            <Route path='/' element={<ProtectedRoute>
@@ -60,7 +66,12 @@ export default function App() {
          
           <Route path='/loginPage' element={<LoginPage />} />
           <Route path='/social-login' element={<SocialLogin />} />
-          <Route path='/orderPage' element={<AddOrderPage />} />
+          <Route path='/orderPage' element={<ProtectedRoute><AddOrderPage /></ProtectedRoute>} />
+          <Route path='/orderListPage' element={<ProtectedRoute><ListOrdersPage /></ProtectedRoute>} />
+          <Route path='/userListPage' element={<ProtectedRoute><ListUserPage /></ProtectedRoute>} />
+          <Route path='/productListPage/:orderId' element={<ListProductsPage />} />
+          {/* <Route path='/exportToExcelProducts/:orderId' element={<ExportToExcelProducts />} /> */}
+
 
 
         </Routes>

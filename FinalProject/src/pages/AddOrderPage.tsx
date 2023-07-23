@@ -2,116 +2,157 @@ import { HubConnection, HubConnectionBuilder } from '@microsoft/signalr';
 import React, { useEffect, useState } from 'react';
 import { Button, Input, Checkbox, Radio, Form, Dropdown } from 'semantic-ui-react';
 import { LocalJwt } from '../types/AuthTypes';
-import { OrderAddCommand } from '../types/OrderTypes';
+import { OrderAddCommand, ProductCrowlType } from '../types/OrderTypes';
+import { NotificationGetLastDto } from '../types/NotificationTypes';
+import { toast } from 'react-toastify';
+
+
+
 
 const BASE_SIGNALR_URL = import.meta.env.VITE_API_SIGNALR_URL;
 
 const AddOrderPage: React.FC = () => {
   const [numProducts, setNumProducts] = useState<number | ''>('');
   const [selectedOption, setSelectedOption] = useState<string>('');
-  const [orderHubConnection,setOrderHubConnection] = useState<HubConnection | undefined>(undefined);
+  const [orderHubConnection, setOrderHubConnection] = useState<HubConnection | undefined>(undefined);
+  const [notifictionHubConnection, setNotifictionHubConnection] = useState<HubConnection | undefined>(undefined);
+  const [notifiction, setNotifiction] = useState<NotificationGetLastDto>();
+  const [isLoading, setIsLoading] = useState(false); // New state variable for loading
+
+
 
   useEffect(() => {
 
 
     const startConnection = async () => {
 
-        const jwtJson = localStorage.getItem("upstorage_user");
-        if(jwtJson){
-            const localJwt:LocalJwt =JSON.parse(jwtJson);
+      const jwtJson = localStorage.getItem("upstorage_user");
+      if (jwtJson) {
+        const localJwt: LocalJwt = JSON.parse(jwtJson);
 
-            const connection = new HubConnectionBuilder()
-                .withUrl(`${BASE_SIGNALR_URL}Hubs/OrderHub?access_token=${localJwt.accessToken}`)
-                .withAutomaticReconnect()
-                .build();
+        const connection = new HubConnectionBuilder()
+          .withUrl(`${BASE_SIGNALR_URL}Hubs/OrderHub?access_token=${localJwt.accessToken}`)
+          .withAutomaticReconnect()
+          .build();
 
-            await connection.start();
+        await connection.start();
 
-            setOrderHubConnection(connection);
-        }
+        setOrderHubConnection(connection);
+
+        const connectionNotification = new HubConnectionBuilder()
+          .withUrl(`${BASE_SIGNALR_URL}Hubs/NotificationHub?access_token=${localJwt.accessToken}`)
+          .withAutomaticReconnect()
+          .build();
+
+          await connectionNotification.start();
+
+          connectionNotification.on('NewNotificationAdded', (notification: NotificationGetLastDto) => {
+            setNotifiction(notification);
+            showToast(notification.title); // Toast bildirimi göster
+          });
+
+        setNotifictionHubConnection(connectionNotification);
+
+      }
     }
-    if(!orderHubConnection){
-        startConnection();
+    if (!orderHubConnection) {
+      startConnection();
+    }
+    if (!notifictionHubConnection) {
+      startConnection();
     }
 
-},[])
-const [order, setOrder] = useState<OrderAddCommand>({
+  }, [])
+
+  const showToast = (updatedData: string) => {
+    toast(`${updatedData}`);
+  };
+
+  const [order, setOrder] = useState<OrderAddCommand>({
     requestedAmount: 0,
     totalFoundedAmount: 0,
     productCrowlType: 0,
     userId: ""
-});
-const handleSubmit = async () => {
-    console.log("order",order)
-
-        const orderId = await orderHubConnection?.invoke<string>("AddANewOrder",order);
-
-        console.log(orderId)
-        /*   const response = await api.post<ApiResponse<string>>("/Accounts", account);
-           if(response.data) {
-               console.log(`Account with ID: ${response.data.data} added successfully.`);
-               // You can redirect to accounts page or show success message here.
-           }*/
+  });
+  const handleSubmit = async () => {
+    try {
+      setIsLoading(true); 
+      const orderId = await orderHubConnection?.invoke<string>("AddANewOrder", order);
+      console.log(orderId);
+      setIsLoading(false); 
+    } catch (error) {
+      console.error("Error while invoking AddANewOrder:", error);
     }
-    const handleNumProductsChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const numProducts = parseInt(event.target.value, 10);
-        setOrder(prevOrder => ({
-          ...prevOrder,
-          requestedAmount: numProducts,
-        }));
-      };
-    
-      const handleOptionChange2 = (event: React.SyntheticEvent<HTMLElement, Event>, data: any) => {
-        const selectedOption = data.value;
-        setOrder(prevOrder => ({
-          ...prevOrder,
-          productCrowlType: selectedOption,
-        }));
-      };
+  }
+  const handleNumProductsChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const numProducts = parseInt(event.target.value, 10);
+    setNumProducts(Number(event.target.value));
+    setOrder(prevOrder => ({
+      ...prevOrder,
+      requestedAmount: numProducts,
+    }));
+  };
 
- 
+  const handleOptionChange2 = (event: React.SyntheticEvent<HTMLElement, Event>, data: any) => {
+    const selectedOption = data.value;
+
+    setOrder(prevOrder => ({
+      ...prevOrder,
+      productCrowlType: selectedOption,
+    }));
+
+    setSelectedOption(selectedOption);
+  };
+
+
   const handleScrapeButtonClick = () => {
     // Seçilen değerleri kullanarak ilgili işlemleri yapabilirsiniz
     console.log('Kazımak istediğiniz ürün sayısı:', numProducts);
     console.log('Seçilen ürün türü:', selectedOption);
   };
-  enum ProductCrowlType {
-    All = 0,
-    OnDiscount = 1,
-    NonDiscount = 2
-  }
+  
   return (
     <div style={{ marginTop: '300px' }}>
-    <Form>
-      <Form.Field>
-        <label>Kaç ürün kazımak istiyorsunuz?</label>
-        <Input
-          type="number"
-          value={numProducts}
-          onChange={handleNumProductsChange}
-          placeholder="Tüm ürünler"
-        />
-      </Form.Field>
-      <Form.Field>
-      <div>
-      <Dropdown
-        selection
-        options={[
-          { key: ProductCrowlType.All, value: ProductCrowlType.All, text: 'Hepsi' },
-          { key: ProductCrowlType.OnDiscount, value: ProductCrowlType.OnDiscount, text: 'İndirimdeki Ürünler' },
-          { key: ProductCrowlType.NonDiscount, value: ProductCrowlType.NonDiscount, text: 'Normal Fiyatlı Ürünler' },
-        ]}
-        value={selectedOption}
-        onChange={handleOptionChange2}
-      />
-      <p>Seçili değer: {selectedOption}</p>
+      {isLoading && <div>Loading...</div>} {/* Show "Loading..." when isLoading is true */}
+      <Form>
+        <Form.Field>
+          <label style={{ color: '#2185D0', fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>
+          How many products do you want to crawl?
+          </label>
+          <Input
+            type="number"
+            value={numProducts}
+            onChange={handleNumProductsChange}
+            placeholder={`Product quantity (${numProducts} )`}
+            style={{ fontSize: '16px', width: '350px', height: '40px' }}
+
+          />
+        </Form.Field>
+        <Form.Field>
+          <div>
+            <Dropdown
+              selection
+              options={[
+                { key: ProductCrowlType.All, value: ProductCrowlType.All, text: 'All' },
+                { key: ProductCrowlType.OnDiscount, value: ProductCrowlType.OnDiscount, text: 'On Discount' },
+                { key: ProductCrowlType.NonDiscount, value: ProductCrowlType.NonDiscount, text: 'Non Discount' },
+              ]}
+              value={selectedOption}
+              onChange={handleOptionChange2}
+              placeholder={`Selected value: ${selectedOption}`}
+              className='custom-navbar'
+              style={{ fontSize: '16px', width: '350px', height: '40px' }}
+
+            />
+          </div>
+        </Form.Field>
+        <Button primary onClick={handleSubmit}>
+        Start crawling
+        </Button>
+      </Form>
+     
     </div>
-      </Form.Field>
-      <Button primary onClick={handleSubmit}>
-        Kazımayı Başlat
-      </Button>
-    </Form>
-  </div>
+    
   );
 };
 

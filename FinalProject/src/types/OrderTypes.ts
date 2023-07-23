@@ -7,3 +7,17 @@ export type OrderAddCommand = {
 
         
 }
+
+export type OrderGetAllDto = {
+        id : string
+        requestedAmount: number
+        totalFoundedAmount :number
+        productCrowlType : ProductCrowlType
+             
+}
+
+export enum ProductCrowlType {
+        All = 0,
+        OnDiscount = 1,
+        NonDiscount = 2,
+      }

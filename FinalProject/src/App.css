@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.custom-navbar {
+  background-color: #808080;
+  fontSize: '16px'; width: '3500px'; height: '40px'
+}

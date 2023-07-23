@@ -17,3 +17,4 @@ export type LocalJwt = {
     accessToken:string,
     expires:string,
 }
+
